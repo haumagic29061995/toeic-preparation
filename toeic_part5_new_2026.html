@@ -41,7 +41,6 @@
     }
 
     .app {
-      max-width: 480px;
       margin: 0 auto;
       min-height: 100vh;
       background: var(--cream);
@@ -366,6 +365,21 @@
       gap: 10px;
       margin-top: 20px;
     }
+    
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      background: var(--paper);
+      border-top: 1px solid var(--line);
+      padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+      display: flex;
+      gap: 10px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
 
     .nav-btn {
       flex: 1;
@@ -389,7 +403,7 @@
     }
 
     .nav-btn.ghost {
-      background: transparent;
+      background: #ffffff;
       color: var(--navy);
       border: 1.5px solid #d8d2c4;
     }
@@ -437,7 +451,8 @@
       font-family: 'Helvetica Neue', Arial, sans-serif;
       font-size: 11px;
       color: rgba(20, 33, 61, 0.35);
-      padding: 16px 0 28px;
+      padding: 8px;
+      margin-bottom: 72px;
     }
   </style>
 </head>
@@ -471,7 +486,7 @@
           <div class="explain" id="explain"></div>
         </div>
 
-        <div class="nav-row">
+        <div class="nav-row bottom-nav">
           <button class="nav-btn ghost" id="prevBtn">← Câu trước</button>
           <button class="nav-btn primary" id="nextBtn">Câu tiếp →</button>
         </div>

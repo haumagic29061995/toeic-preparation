@@ -433,6 +433,21 @@
       margin: 20px 0 4px;
     }
 
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      background: var(--paper);
+      border-top: 1px solid var(--line);
+      padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+      display: flex;
+      gap: 10px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
     .nav-btn {
       flex: 1;
       padding: 12px;
@@ -5489,7 +5504,7 @@
       tabsHtml += `</div>`;
 
       mainArea.innerHTML = tabsHtml + `<div id="passageArea"></div>` + `
-    <div class="nav-buttons">
+    <div class="nav-buttons bottom-nav">
       <div class="nav-btn ${currentPassageIdx === 0 ? 'disabled' : ''}" id="prevPassageBtn">‹ Bài trước</div>
       <div class="nav-btn primary ${currentPassageIdx === numPassages - 1 ? 'disabled' : ''}" id="nextPassageBtn">Bài tiếp ›</div>
     </div>
