@@ -740,13 +740,12 @@
           title: "Đề 01",
           year: "2026",
           audio: "audio/TEST1.mp3",
-          // timestamp (giây) bắt đầu mỗi part
-          partStarts: [
-            112, 134, 174, 202, 228, 256, 326, 346, 366, 388, 410, 430, 452,
-            472, 494, 514, 538, 560, 580, 602, 624, 646, 668, 690, 710, 732,
-            756, 776, 796, 818, 840, 894, 976, 1054, 1146, 1238, 1328, 1418,
-            1502, 1600, 1684, 1770, 1866, 1956, 2080, 2164, 2250, 2340, 2432,
-            2528, 2622, 2712, 2800, 2900,
+          partStarts: [112, 326, 894, 2080],
+          questStarts: [
+            112, 134, 174, 202, 228, 256,
+            326, 346, 366, 388, 410, 430, 452, 472, 494, 514, 538, 560, 580, 602, 624, 646, 668, 690, 710, 732, 756, 776, 796, 818, 840,
+            894, 976, 1054, 1146, 1238, 1328, 1418, 1502, 1600, 1684, 1770, 1866, 1956,
+            2080, 2164, 2250, 2340, 2432, 2528, 2622, 2712, 2800, 2900
           ],
           parts: [
             {
@@ -2079,7 +2078,8 @@
           title: "Đề 02",
           year: "2024",
           audio: "audio/TEST2.mp3",
-          partStarts: [
+          partStarts: [110, 318, 869, 2018],
+          questStarts: [
             110, 137, 174, 201, 223, 251,
             318, 336, 357, 376, 396, 416, 435, 457, 476, 497, 518, 542, 564, 586, 607, 628, 648, 669, 690, 713, 736, 755, 777, 798, 817,
             869, 944, 1040, 1120, 1212, 1298, 1376, 1449, 1538, 1622, 1703, 1810, 1899,
@@ -3422,7 +3422,8 @@
           title: "Đề 03",
           year: "2023",
           audio: "audio/TEST3.mp3",
-          partStarts: [
+          partStarts: [111, 326, 884, 2043],
+          questStarts: [
             111, 137, 173, 200, 225, 253,
             320, 341, 360, 380, 401, 424, 447, 469, 488, 508, 528, 551, 573, 595, 617, 636, 660, 681, 702, 724, 744, 766, 790, 821, 833,
             884, 961, 1041, 1126, 1231, 1313, 1402, 1484, 1573, 1660, 1740, 1835, 1926,
@@ -4763,7 +4764,8 @@
           title: "Đề 04",
           year: "2023",
           audio: "audio/TEST4.mp3",
-          partStarts: [
+          partStarts: [110, 323, 872, 2023],
+          questStarts: [
             110, 137, 174, 201, 228, 257,
             323, 343, 362, 383, 403, 423, 444, 465, 485, 506, 527, 547, 568, 587, 607, 630, 653, 673, 695, 715, 736, 757, 779, 800, 821,
             872, 957, 1039, 1119, 1209, 1288, 1368, 1457, 1537, 1621, 1710, 1815, 1899,
@@ -6103,7 +6105,8 @@
           title: "Đề 05",
           year: "2023",
           audio: "audio/TEST5.mp3",
-          partStarts: [
+          partStarts: [110, 325, 891, 2052],
+          questStarts: [
             110, 138, 173, 202, 230, 258,
             325, 345, 363, 383, 402, 424, 445, 465, 487, 507, 530, 551, 574, 597, 620, 642, 665, 687, 708, 730, 752, 774, 795, 818, 839,
             891, 973, 1049, 1139, 1229, 1317, 1403, 1486, 1574, 1656, 1742, 1842, 1933,
@@ -7471,7 +7474,8 @@
           title: "Đề 06",
           year: "2023",
           audio: "audio/TEST6.mp3",
-          partStarts: [
+          partStarts: [110, 321, 860, 1978],
+          questStarts: [
             110, 134, 171, 197, 225, 253,
             321, 341, 360, 379, 399, 421, 443, 462, 482, 503, 522, 542, 563, 582, 602, 623, 645, 665, 686, 705, 725, 747, 768, 789, 808,
             860, 937, 1020, 1113, 1199, 1282, 1362, 1441, 1523, 1607, 1688, 1785, 1868,
@@ -8816,7 +8820,8 @@
           title: "Đề 07",
           year: "2023",
           audio: "audio/TEST7.mp3",
-          partStarts: [
+          partStarts: [110, 320, 869, 2025],
+          questStarts: [
             110, 135, 171, 198, 224, 253,
             320, 340, 359, 381, 399, 419, 440, 460, 480, 502, 523, 544, 566, 586, 606, 626, 648, 671, 691, 715, 737, 757, 779, 800, 821,
             869, 949, 1032, 1115, 1206, 1293, 1377, 1466, 1544, 1628, 1714, 1820, 1905,
@@ -10169,8 +10174,7 @@
           title: "Đề 08",
           year: "2023",
           audio: "audio/TEST8.mp3",
-          partStarts: [
-          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -11521,7 +11525,13 @@
           title: "Đề 09",
           year: "2023",
           audio: "audio/TEST9.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            318,
+            867,
+            2009,
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -12863,7 +12873,13 @@
           title: "Đề 10",
           year: "2023",
           audio: "audio/TEST10.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            325,
+            885,
+            2044,
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -14214,7 +14230,13 @@
           title: "Đề 11",
           year: "2023",
           audio: "audio/TEST11.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            312,
+            880,
+            2060,
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -15556,7 +15578,13 @@
           title: "Đề 12",
           year: "2023",
           audio: "audio/TEST12.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            304,
+            855,
+            2000,
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -16906,7 +16934,13 @@
           title: "Đề 13",
           year: "2023",
           audio: "audio/TEST13.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            314,
+            892,
+            2077,
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -18262,7 +18296,13 @@
           title: "Đề 14",
           year: "2023",
           audio: "audio/TEST14.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            314,
+            880,
+            2044,
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -19588,7 +19628,13 @@
           title: "Đề 15",
           year: "2023",
           audio: "audio/TEST15.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            305,
+            855,
+            1990,
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -20885,7 +20931,13 @@
           title: "Đề 16",
           year: "2023",
           audio: "audio/TEST16.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            304,
+            852,
+            2038
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -22162,7 +22214,13 @@
           title: "Đề 17",
           year: "2023",
           audio: "audio/TEST17.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            313,
+            885,
+            2077
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -23454,7 +23512,13 @@
           title: "Đề 18",
           year: "2023",
           audio: "audio/TEST18.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            309,
+            880,
+            2069
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -24746,7 +24810,13 @@
           title: "Đề 19",
           year: "2023",
           audio: "audio/TEST19.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            304,
+            841,
+            1954
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -26023,7 +26093,13 @@
           title: "Đề 20",
           year: "2023",
           audio: "audio/TEST20.mp3",
-          partStarts: [],
+          partStarts: [
+            110,
+            309,
+            860,
+            2024
+          ],
+          questStarts: [],
           parts: [
             {
               part: 1,
@@ -27308,7 +27384,7 @@
           title: `Đề ${String(i).padStart(2, "0")}`,
           year: "2026",
           audio: `audio/TEST${String(i).padStart(2, "0")}.mp3`,
-          partStarts: [],
+          questStarts: [],
           parts: [],
         });
       }
@@ -27389,8 +27465,7 @@
           curExam.partStarts &&
           curExam.partStarts[idx] !== undefined
         ) {
-          const partTimeIndex = [0, 6, 31, 44];
-          audioEl.currentTime = curExam.partStarts[partTimeIndex[idx]];
+          audioEl.currentTime = curExam.partStarts[idx];
         }
 
         updateMarkers();
@@ -27413,10 +27488,10 @@
 
         if (
           curExam &&
-          curExam.partStarts &&
-          curExam.partStarts[idx] !== undefined
+          curExam.questStarts &&
+          curExam.questStarts[idx] !== undefined
         ) {
-          audioEl.currentTime = curExam.partStarts[idx];
+          audioEl.currentTime = curExam.questStarts[idx];
         }
 
         updateMarkers();
@@ -27493,7 +27568,7 @@
 
       function renderPartMarkers() {
         const wrap = document.getElementById("part-markers");
-        if (!curExam.partStarts) {
+        if (!curExam.questStarts) {
           wrap.innerHTML = "";
           return;
         }
@@ -27505,7 +27580,7 @@
           (_, i) => arr.slice(i * 3, i * 3 + 3).join("."),
         );
         const quests = [...part12, ...part34];
-        wrap.innerHTML = curExam.partStarts
+        wrap.innerHTML = curExam.questStarts
           .map((t, i) => {
             const qId = quests[i];
             return `
@@ -27546,15 +27621,15 @@
       }
 
       function jumpQuest(idx, str) {
-        if (curExam.partStarts) audioEl.currentTime = curExam.partStarts[idx];
+        if (curExam.questStarts) audioEl.currentTime = curExam.questStarts[idx];
         const first = str.split(".").shift();
         goToQuest(idx, Number(first));
       }
 
       function updateMarkers() {
-        if (!curExam || !curExam.partStarts) return;
+        if (!curExam || !curExam.questStarts) return;
         const t = audioEl.currentTime;
-        const starts = curExam.partStarts;
+        const starts = curExam.questStarts;
         let cur = 0;
         for (let i = 0; i < starts.length; i++) if (t >= starts[i]) cur = i;
         document.querySelectorAll(".p-marker").forEach((m, i) => {
